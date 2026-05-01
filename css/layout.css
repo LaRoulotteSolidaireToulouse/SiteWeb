@@ -1,7 +1,4 @@
-/* ===========================
-   HEADER MOBILE
-   =========================== */
-
+/* HEADER */
 .header {
   background: white;
   box-shadow: var(--shadow-soft);
@@ -29,7 +26,7 @@
   border: none;
 }
 
-/* Mobile */
+/* MOBILE NAV */
 @media (max-width: 768px) {
   #navMenu {
     display: none;
@@ -46,4 +43,83 @@
   #navToggle {
     display: block;
   }
+}
+
+/* LOADER */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.loader.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 3000;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-content {
+  background: white;
+  padding: var(--space-l);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-strong);
+  max-width: 400px;
+}
+
+/* TOAST */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--c-primary);
+  color: white;
+  padding: var(--space-m);
+  border-radius: var(--radius-m);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s ease;
+  z-index: 4000;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
 }
