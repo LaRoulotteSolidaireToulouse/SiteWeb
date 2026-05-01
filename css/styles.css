@@ -1,315 +1,187 @@
-/* ----------------------------------------------------------
-   RESET & BASE
----------------------------------------------------------- */
+/* ============================================
+   STYLES.CSS — La Roulotte Solidaire Toulouse
+   Version moderne, animée, design system avancé
+   ============================================ */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ------------------------------
+   GLOBAL
+------------------------------ */
+
+main {
+  padding: var(--space-xl) var(--space-l);
+  animation: fadeIn 0.6s ease;
 }
 
-html {
-  font-family: system-ui, sans-serif;
-  line-height: 1.6;
-  color: #222;
-  background: #fafafa;
-  scroll-behavior: smooth;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-a {
-  color: #005bbb;
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 1.6rem;
-  margin-bottom: 0.8rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
+h1, h2, h3 {
+  margin-bottom: var(--space-m);
+  font-weight: 700;
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-m);
 }
 
-ul {
-  padding-left: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-/* ----------------------------------------------------------
-   HEADER & NAVIGATION
----------------------------------------------------------- */
-
-header {
-  background: white;
-  border-bottom: 1px solid #ddd;
-  padding: 0.6rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.nav-container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.brand-logo {
-  width: 42px;
-  height: 42px;
-  background: #005bbb;
-  color: white;
-  font-weight: bold;
-  font-size: 1.4rem;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9rem;
-  line-height: 1.1;
-}
-
-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-nav a {
-  padding: 0.45rem 0.7rem;
-  border-radius: 4px;
-  font-weight: 500;
-}
-
-nav a.active,
-nav a:hover {
-  background: #005bbb;
-  color: white;
-}
-
-/* ----------------------------------------------------------
+/* ------------------------------
    HERO SECTION
----------------------------------------------------------- */
+------------------------------ */
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 2.5rem;
-  padding: 3rem 1rem;
-  max-width: 1100px;
-  margin: auto;
+  margin-bottom: var(--space-xl);
 }
 
-.hero .lead {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  color: #333;
+.hero-animated h1 {
+  font-size: 2.8rem;
+  margin-bottom: var(--space-m);
+}
+
+.hero-animated .lead {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-l);
+  opacity: 0.9;
 }
 
 .hero-badges {
   display: flex;
-  gap: 0.6rem;
-  margin: 1rem 0;
-  flex-wrap: wrap;
+  gap: var(--space-s);
+  margin-bottom: var(--space-l);
 }
 
 .badge {
-  background: #005bbb;
-  color: white;
-  padding: 0.35rem 0.7rem;
-  border-radius: 4px;
-  font-size: 0.85rem;
+  background: rgba(255,255,255,0.2);
+  padding: var(--space-s) var(--space-m);
+  border-radius: var(--radius-m);
+  font-size: 0.9rem;
+  backdrop-filter: blur(4px);
 }
 
-.hero-cta {
-  margin-top: 1.2rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.hero-side {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 1.4rem;
-  border-radius: 8px;
-}
-
-.hero-side h2 {
-  margin-bottom: 0.6rem;
-}
-
-/* ----------------------------------------------------------
+/* ------------------------------
    BUTTONS
----------------------------------------------------------- */
+------------------------------ */
 
 .btn {
-  padding: 0.65rem 1.1rem;
-  border-radius: 6px;
+  padding: var(--space-s) var(--space-l);
+  border-radius: var(--radius-m);
   font-weight: 600;
+  text-decoration: none;
   display: inline-block;
-  transition: 0.2s ease;
+  transition: var(--t-fast);
 }
 
 .btn-primary {
-  background: #005bbb;
+  background: var(--c-secondary);
   color: white;
 }
 
 .btn-primary:hover {
-  background: #004999;
+  background: var(--c-primary);
 }
 
 .btn-outline {
-  border: 2px solid #005bbb;
-  color: #005bbb;
-}
-
-.btn-outline:hover {
-  background: #005bbb;
+  border: 2px solid white;
   color: white;
 }
 
-/* ----------------------------------------------------------
+.btn-outline:hover {
+  background: white;
+  color: var(--c-primary);
+}
+
+/* ------------------------------
    SECTIONS
----------------------------------------------------------- */
+------------------------------ */
 
 .section {
-  max-width: 1100px;
-  margin: 2.5rem auto;
-  padding: 0 1rem;
+  margin-bottom: var(--space-xl);
 }
 
 .section h2 {
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: var(--space-l);
 }
 
-/* ----------------------------------------------------------
+/* ------------------------------
    CARDS
----------------------------------------------------------- */
+------------------------------ */
 
 .cards {
   display: grid;
-  gap: 1.6rem;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  margin-top: 1.2rem;
+  gap: var(--space-l);
 }
 
 .card {
   background: white;
-  border: 1px solid #ddd;
-  padding: 1.4rem;
-  border-radius: 10px;
-  transition: 0.2s ease;
+  padding: var(--space-l);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-soft);
+  transition: var(--t-slow);
+  position: relative;
+  overflow: hidden;
 }
 
 .card:hover {
-  border-color: #bbb;
-  transform: translateY(-2px);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-strong);
 }
 
-.card h3 {
-  margin: 0.5rem 0;
+.card .tag {
+  position: absolute;
+  top: var(--space-m);
+  right: var(--space-m);
+  background: var(--c-primary);
+  color: white;
+  padding: var(--space-xs) var(--space-s);
+  border-radius: var(--radius-s);
+  font-size: 0.75rem;
 }
 
-.tag {
-  display: inline-block;
-  background: #eee;
-  padding: 0.25rem 0.55rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
-}
-
-/* ----------------------------------------------------------
+/* ------------------------------
    FOOTER
----------------------------------------------------------- */
+------------------------------ */
 
-footer {
-  margin-top: auto;
-  background: #222;
-  color: #eee;
-  padding: 1.2rem 0;
+.footer {
+  background: var(--c-bg-dark);
+  color: var(--c-text-light);
+  padding: var(--space-l);
+  margin-top: var(--space-xl);
 }
 
 .footer-inner {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-links a {
-  color: #eee;
-  margin-left: 1rem;
+  color: var(--c-text-light);
+  margin-left: var(--space-m);
+  text-decoration: none;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+  color: var(--c-primary-light);
 }
 
-/* ----------------------------------------------------------
+/* ------------------------------
    RESPONSIVE
----------------------------------------------------------- */
+------------------------------ */
 
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  nav ul {
-    flex-wrap: wrap;
-    gap: 0.5rem;
+@media (max-width: 768px) {
+  main {
+    padding: var(--space-l);
   }
 
-  .brand-text {
-    font-size: 0.8rem;
+  .hero-animated h1 {
+    font-size: 2.2rem;
   }
 
-  .hero {
-    padding: 2rem 1rem;
+  .footer-inner {
+    flex-direction: column;
+    gap: var(--space-m);
   }
 }
