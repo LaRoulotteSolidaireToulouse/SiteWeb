@@ -65,7 +65,7 @@ Toutes les modifications majeures depuis la création du projet.
 ---
 ---
 
-## 🟦 v1.1 — Release Stable
+## 🟦 v1.5 — Release Stable
 📅 Date : 22 avril 2026  
 🎯 Mise à jour de la version stable du site
 
