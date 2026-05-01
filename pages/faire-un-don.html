@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Faire un don – La Roulotte Solidaire Toulouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../css/system.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div id="loader-container"></div>
+<div id="modal-container"></div>
+<div id="toast-container"></div>
+<div id="header"></div>
+
+<main>
+
+  <section class="section reveal">
+    <h1>Faire un don</h1>
+    <p class="lead">
+      Chaque don compte. Vous pouvez contribuer matériellement, financièrement
+      ou en offrant du temps.
+    </p>
+
+    <div class="cards">
+
+      <article class="card reveal">
+        <span class="tag">Matériel</span>
+        <h3>Dons matériels</h3>
+        <p>
+          Vêtements, couvertures, chaussures, produits d’hygiène, croquettes…
+          Tout est redistribué directement aux personnes à la rue.
+        </p>
+        <button class="btn btn-primary btn-animated"
+                onclick="openModal('Dons matériels', 'Vous pouvez déposer vos dons lors de nos collectes ou sur rendez-vous.')">
+          En savoir plus
+        </button>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">Financier</span>
+        <h3>Dons financiers</h3>
+        <p>
+          Ils permettent d’acheter du matériel, financer les maraudes
+          et organiser des actions solidaires.
+        </p>
+        <button class="btn btn-primary btn-animated"
+                onclick="showToast('Les dons financiers seront bientôt disponibles')">
+          Faire un don
+        </button>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">Temps</span>
+        <h3>Donner de son temps</h3>
+        <p>
+          Rejoignez l’équipe de bénévoles pour participer aux maraudes,
+          collectes et événements.
+        </p>
+        <a href="aider.html#benevolat" class="btn btn-primary btn-animated">
+          Devenir bénévole
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+<script src="../js/layout.js"></script>
+</body>
+</html>
