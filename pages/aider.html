@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nous aider – La Roulotte Solidaire Toulouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../css/system.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div id="loader-container"></div>
+<div id="modal-container"></div>
+<div id="toast-container"></div>
+<div id="header"></div>
+
+<main>
+
+  <section class="section reveal">
+    <h1>Comment nous aider</h1>
+    <p class="lead">
+      Votre soutien est essentiel pour permettre à nos actions solidaires
+      d’exister et de se développer.
+    </p>
+
+    <div class="cards">
+
+      <article class="card reveal">
+        <h3>Faire un don matériel</h3>
+        <p>
+          Vêtements, chaussures, couvertures, produits d’hygiène, croquettes…
+          Chaque don est redistribué directement aux personnes rencontrées.
+        </p>
+        <button class="btn btn-primary btn-animated"
+                onclick="openModal('Dons matériels', 'Vous pouvez déposer vos dons lors de nos événements ou sur rendez-vous.')">
+          En savoir plus
+        </button>
+      </article>
+
+      <article class="card reveal" id="benevolat">
+        <h3>Devenir bénévole</h3>
+        <p>
+          Rejoignez l’équipe pour les maraudes, la logistique, la communication
+          ou l’organisation d’événements.
+        </p>
+        <button class="btn btn-primary btn-animated"
+                onclick="openModal('Bénévolat', 'Nous accueillons tous les profils : motivés, bienveillants et prêts à aider.')">
+          En savoir plus
+        </button>
+      </article>
+
+      <article class="card reveal">
+        <h3>Soutenir autrement</h3>
+        <p>
+          Parlez de nous autour de vous, partagez nos publications,
+          ou proposez un partenariat solidaire.
+        </p>
+        <button class="btn btn-primary btn-animated"
+                onclick="openModal('Soutien', 'Chaque partage, chaque parole compte pour faire connaître notre action.')">
+          En savoir plus
+        </button>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="../js/layout.js"></script>
+</body>
+</html>
