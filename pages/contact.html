@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – La Roulotte Solidaire Toulouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../css/system.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-m);
+      margin-top: var(--space-l);
+    }
+
+    input, textarea {
+      padding: var(--space-m);
+      border-radius: var(--radius-m);
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="loader-container"></div>
+<div id="modal-container"></div>
+<div id="toast-container"></div>
+<div id="header"></div>
+
+<main>
+
+  <section class="section reveal">
+    <h1>Contact</h1>
+    <p class="lead">
+      Vous souhaitez nous poser une question, proposer une aide ou obtenir des informations ?
+      Envoyez-nous un message.
+    </p>
+
+    <div class="card reveal">
+      <h3>Formulaire de contact</h3>
+
+      <form onsubmit="event.preventDefault(); showToast('Message envoyé !');">
+        <input type="text" placeholder="Votre nom" required />
+        <input type="email" placeholder="Votre email" required />
+        <textarea placeholder="Votre message" required></textarea>
+
+        <button class="btn btn-primary btn-animated" type="submit">
+          Envoyer
+        </button>
+      </form>
+    </div>
+
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="../js/layout.js"></script>
+</body>
+</html>
