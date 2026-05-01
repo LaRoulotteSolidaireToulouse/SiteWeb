@@ -1,0 +1,187 @@
+/* ============================================
+   STYLES.CSS — La Roulotte Solidaire Toulouse
+   Version moderne, animée, design system avancé
+   ============================================ */
+
+/* ------------------------------
+   GLOBAL
+------------------------------ */
+
+main {
+  padding: var(--space-xl) var(--space-l);
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2, h3 {
+  margin-bottom: var(--space-m);
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: var(--space-m);
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+
+.hero {
+  margin-bottom: var(--space-xl);
+}
+
+.hero-animated h1 {
+  font-size: 2.8rem;
+  margin-bottom: var(--space-m);
+}
+
+.hero-animated .lead {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-l);
+  opacity: 0.9;
+}
+
+.hero-badges {
+  display: flex;
+  gap: var(--space-s);
+  margin-bottom: var(--space-l);
+}
+
+.badge {
+  background: rgba(255,255,255,0.2);
+  padding: var(--space-s) var(--space-m);
+  border-radius: var(--radius-m);
+  font-size: 0.9rem;
+  backdrop-filter: blur(4px);
+}
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+
+.btn {
+  padding: var(--space-s) var(--space-l);
+  border-radius: var(--radius-m);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: var(--t-fast);
+}
+
+.btn-primary {
+  background: var(--c-secondary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--c-primary);
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--c-primary);
+}
+
+/* ------------------------------
+   SECTIONS
+------------------------------ */
+
+.section {
+  margin-bottom: var(--space-xl);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-l);
+}
+
+/* ------------------------------
+   CARDS
+------------------------------ */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-l);
+}
+
+.card {
+  background: white;
+  padding: var(--space-l);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-soft);
+  transition: var(--t-slow);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-strong);
+}
+
+.card .tag {
+  position: absolute;
+  top: var(--space-m);
+  right: var(--space-m);
+  background: var(--c-primary);
+  color: white;
+  padding: var(--space-xs) var(--space-s);
+  border-radius: var(--radius-s);
+  font-size: 0.75rem;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+.footer {
+  background: var(--c-bg-dark);
+  color: var(--c-text-light);
+  padding: var(--space-l);
+  margin-top: var(--space-xl);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links a {
+  color: var(--c-text-light);
+  margin-left: var(--space-m);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--c-primary-light);
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+
+@media (max-width: 768px) {
+  main {
+    padding: var(--space-l);
+  }
+
+  .hero-animated h1 {
+    font-size: 2.2rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: var(--space-m);
+  }
+}
