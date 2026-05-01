@@ -1,9 +1,14 @@
 <footer class="footer">
   <div class="footer-inner">
     <div>© <span id="year"></span> La Roulotte Solidaire Toulouse</div>
+
     <div class="footer-links">
       <a href="mentions-legales.html">Mentions légales</a>
       <a href="infos.html">Contact</a>
     </div>
   </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </footer>
