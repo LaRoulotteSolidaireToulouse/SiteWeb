@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>La Roulotte Solidaire Toulouse – Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Design System + Layout + Styles -->
+  <link rel="stylesheet" href="../css/system.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- Hero Parallax + Overlay -->
+  <style>
+    .hero-parallax {
+      position: relative;
+      background: url('../assets/hero.jpg') center/cover fixed;
+      padding: var(--space-xl) var(--space-l);
+      border-radius: var(--radius-l);
+      overflow: hidden;
+      margin-bottom: var(--space-xl);
+    }
+
+    .hero-parallax::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(2px);
+    }
+
+    .hero-parallax-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      text-align: center;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .hero-parallax h1 {
+      font-size: 3rem;
+      margin-bottom: var(--space-m);
+    }
+
+    .hero-parallax .lead {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      margin-bottom: var(--space-l);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Components injected -->
+<div id="loader-container"></div>
+<div id="modal-container"></div>
+<div id="toast-container"></div>
+<div id="header"></div>
+
+<main>
+
+  <!-- HERO PREMIUM (A+B+C fusionné) -->
+  <section class="hero-parallax reveal">
+    <div class="hero-parallax-content">
+      <h1>La Roulotte Solidaire Toulouse</h1>
+      <p class="lead">
+        Une association engagée pour aller à la rencontre des personnes à la rue,
+        avec bienveillance, écoute et soutien concret.
+      </p>
+
+      <div class="hero-badges">
+        <span class="badge">Maraudes solidaires</span>
+        <span class="badge">Collectes de dons</span>
+        <span class="badge">Événements de quartier</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="aider.html" class="btn btn-primary btn-animated">Voir comment aider</a>
+        <a href="actions.html" class="btn btn-outline btn-animated">Découvrir nos actions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION MISSION -->
+  <section class="section reveal">
+    <h2>Notre mission</h2>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="tag">Maraudes</span>
+        <h3>Aller vers les personnes à la rue</h3>
+        <p>
+          Nous distribuons boissons, nourriture, vêtements, produits d’hygiène
+          et surtout du temps d’écoute.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">Collectes</span>
+        <h3>Récolter des dons utiles</h3>
+        <p>
+          Nous collectons vêtements, chaussures, couvertures, produits d’hygiène
+          et croquettes pour chiens selon les besoins.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">Lien social</span>
+        <h3>Créer des rencontres</h3>
+        <p>
+          Nous recréons du lien humain, de la considération et des moments de partage.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SECTION ACTION IMMEDIATE -->
+  <section class="section reveal">
+    <h2>Comment agir dès maintenant</h2>
+    <div class="cards">
+      <article class="card reveal">
+        <h3>Faire un don matériel</h3>
+        <p>
+          Consultez la liste des besoins prioritaires et déposez vos dons lors
+          de nos événements ou sur rendez-vous.
+        </p>
+        <a href="aider.html" class="btn btn-outline btn-animated">Voir les besoins</a>
+      </article>
+
+      <article class="card reveal">
+        <h3>Devenir bénévole</h3>
+        <p>
+          Rejoignez l’équipe pour les maraudes, la logistique ou la communication.
+        </p>
+        <a href="aider.html#benevolat" class="btn btn-outline btn-animated">En savoir plus</a>
+      </article>
+
+      <article class="card reveal">
+        <h3>Relayer l’information</h3>
+        <p>
+          Parlez de l’association autour de vous et partagez nos publications.
+        </p>
+        <a href="infos.html#reseaux" class="btn btn-outline btn-animated">Voir nos réseaux</a>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<!-- SPA + Components + Animations -->
+<script src="../js/layout.js"></script>
+
+</body>
+</html>
