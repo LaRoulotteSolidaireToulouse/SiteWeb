@@ -81,3 +81,16 @@ Toutes les modifications majeures depuis la création du projet.
 
 ### Fixed
 - Correction de liens internes entre les différentes pages.
+
+## 🟦 v2.0 : mise à jour du projet (2026-05-01)
+
+### ✔️ Améliorations
+- [x] Mise à jour complète des textes et contenus du site
+- [x] Actualisation des images et visuels
+- [x] Harmonisation du design (couleurs, typographies, espacements)
+- [x] Optimisation de la navigation et des pages principales
+- [x] Amélioration de l’accessibilité (contrastes, structure, aria-labels)
+- [x] Nettoyage du code et suppression des éléments obsolètes
+
+### ✔️ Préparation
+- [x] Base stabilisée pour les futures versions (v2.1, v3.0)
