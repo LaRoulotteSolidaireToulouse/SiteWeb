@@ -1,7 +1,6 @@
-# 🗺️ Roadmap – SiteWeb (v1.0 → v1.5)
-
-Cette roadmap présente l’évolution prévue du projet SiteWeb, de la version 1.0 à la version 1.5.  
-Objectif : construire progressivement un site modulaire, maintenable et prêt pour un design system complet.
+# 🗺️ Roadmap – SiteWeb (v1.0 → v2.0)
+>Cette roadmap présente l’évolution prévue du projet SiteWeb, de la version 1.0 à la version 2.0
+- Objectif : construire progressivement un site modulaire, maintenable et prêt pour un design system complet.
 
 ---
 
@@ -14,7 +13,7 @@ Objectif : construire progressivement un site modulaire, maintenable et prêt po
 
 ---
 
-## 🚧 v1.1 — Pages & Structure
+## 🚧 v1.2 — Pages & Structure
 - Ajout des pages : projects.html, services.html, contact.html
 - Intégration du header/footer via includes
 - Harmonisation de la structure HTML
@@ -23,7 +22,7 @@ Objectif : construire progressivement un site modulaire, maintenable et prêt po
 
 ---
 
-## 🎨 v1.2 — Design System (CSS)
+## 🎨 v1.4 — Design System (CSS)
 - Création du design system (variables, couleurs, typos)
 - Mise en place de `variables.css`, `reset.css`, `normalize.css`
 - Harmonisation des classes CSS
@@ -32,7 +31,7 @@ Objectif : construire progressivement un site modulaire, maintenable et prêt po
 
 ---
 
-## ⚙️ v1.3 — Interactivité (JS)
+## ⚙️ v1.6 — Interactivité (JS)
 - Système d’includes JS finalisé
 - Formulaire contact : validation front
 - Menu responsive
@@ -41,7 +40,7 @@ Objectif : construire progressivement un site modulaire, maintenable et prêt po
 
 ---
 
-## 📄 v1.4 — Documentation & Guides
+## 📄 v1.8 — Documentation & Guides
 - Création du dossier `/docs/`
 - Guides : structure, conventions, contribution
 - Documentation utilisateur + développeur
@@ -50,7 +49,7 @@ Objectif : construire progressivement un site modulaire, maintenable et prêt po
 
 ---
 
-## 🚀 v1.5 — Optimisation & Pré‑production
+## 🚀 v2.0— Optimisation & Pré‑production
 - Optimisation des performances (HTML/CSS/JS)
 - Nettoyage du code et refactor
 - Préparation au déploiement (version stable)
