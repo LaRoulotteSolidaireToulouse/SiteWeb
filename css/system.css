@@ -1,0 +1,44 @@
+/* ===========================
+   DESIGN SYSTEM – ADVANCED
+   =========================== */
+
+:root {
+  /* Colors */
+  --c-bg: #f7f7f7;
+  --c-bg-dark: #1a1a1a;
+  --c-primary: #e63946;
+  --c-primary-light: #ff6b6b;
+  --c-secondary: #457b9d;
+  --c-text: #222;
+  --c-text-light: #eee;
+
+  /* Spacing */
+  --space-xs: 0.4rem;
+  --space-s: 0.8rem;
+  --space-m: 1.6rem;
+  --space-l: 2.4rem;
+  --space-xl: 4rem;
+
+  /* Radius */
+  --radius-s: 6px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+
+  /* Shadows */
+  --shadow-soft: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-strong: 0 8px 24px rgba(0,0,0,0.15);
+
+  /* Transitions */
+  --t-fast: 0.2s ease;
+  --t-slow: 0.4s ease;
+}
+
+/* Typography */
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--c-bg);
+  color: var(--c-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
