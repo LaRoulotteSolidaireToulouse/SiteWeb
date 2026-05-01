@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Infos pratiques – La Roulotte Solidaire Toulouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../css/system.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div id="loader-container"></div>
+<div id="modal-container"></div>
+<div id="toast-container"></div>
+<div id="header"></div>
+
+<main>
+
+  <section class="section reveal">
+    <h1>Infos pratiques</h1>
+    <p class="lead">
+      Retrouvez ici toutes les informations utiles pour nous suivre, nous contacter
+      ou participer à nos actions solidaires.
+    </p>
+
+    <div class="cards">
+
+      <article class="card reveal" id="reseaux">
+        <h3>Nos réseaux sociaux</h3>
+        <p>Suivez nos actions et nos annonces :</p>
+        <ul>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>TikTok</li>
+        </ul>
+        <button class="btn btn-primary btn-animated"
+                onclick="showToast('Réseaux sociaux bientôt disponibles')">
+          Voir les réseaux
+        </button>
+      </article>
+
+      <article class="card reveal">
+        <h3>Nous contacter</h3>
+        <p>
+          Pour toute question, proposition ou demande d’information,
+          vous pouvez nous écrire via nos réseaux sociaux ou via la page contact.
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-animated">Page contact</a>
+      </article>
+
+      <article class="card reveal">
+        <h3>Où nous trouver</h3>
+        <p>
+          Nos maraudes ont lieu dans le centre-ville de Toulouse :
+          Cours Dillon, Esquirol, Capitole, Saint-Cyprien.
+        </p>
+        <button class="btn btn-primary btn-animated"
+                onclick="openModal('Localisation', 'Nos maraudes se déroulent dans les quartiers centraux de Toulouse.')">
+          En savoir plus
+        </button>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="../js/layout.js"></script>
+</body>
+</html>
