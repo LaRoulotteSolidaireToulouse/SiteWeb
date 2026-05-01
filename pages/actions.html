@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nos actions – La Roulotte Solidaire Toulouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../css/system.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div id="loader-container"></div>
+<div id="modal-container"></div>
+<div id="toast-container"></div>
+<div id="header"></div>
+
+<main>
+
+  <section class="section reveal">
+    <h1>Nos actions solidaires</h1>
+    <p class="lead">
+      Chaque semaine, nous menons des actions concrètes pour soutenir les personnes à la rue
+      et créer du lien humain au cœur de Toulouse.
+    </p>
+
+    <div class="cards">
+
+      <article class="card reveal">
+        <span class="tag">Maraudes</span>
+        <h3>Maraudes de rue</h3>
+        <p>
+          Distribution de boissons chaudes, nourriture, vêtements, produits d’hygiène
+          et surtout du temps d’écoute.
+        </p>
+        <button class="btn btn-primary btn-animated"
+                onclick="openModal('Maraudes', 'Les maraudes ont lieu chaque semaine dans le centre-ville de Toulouse.')">
+          En savoir plus
+        </button>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">Collectes</span>
+        <h3>Collectes de dons</h3>
+        <p>
+          Organisation de collectes saisonnières : vêtements chauds, couvertures,
+          chaussures, produits d’hygiène, croquettes pour chiens.
+        </p>
+        <button class="btn btn-primary btn-animated"
+                onclick="openModal('Collectes', 'Nous organisons régulièrement des collectes selon les besoins prioritaires.')">
+          En savoir plus
+        </button>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">Événements</span>
+        <h3>Événements solidaires</h3>
+        <p>
+          Vide-greniers, rencontres de quartier, ateliers de sensibilisation,
+          moments conviviaux avec les bénévoles et les habitants.
+        </p>
+        <button class="btn btn-primary btn-animated"
+                onclick="openModal('Événements', 'Nous créons des événements pour renforcer la solidarité locale.')">
+          En savoir plus
+        </button>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="../js/layout.js"></script>
+</body>
+</html>
