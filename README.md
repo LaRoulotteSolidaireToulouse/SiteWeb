@@ -46,7 +46,7 @@
 
 ```text
 SiteWeb/
-├── index.html               
+├── .gitkeeps           
 ├── pages/
 │   ├── index.html
 │   ├── actions.html
