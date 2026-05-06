@@ -80,8 +80,10 @@ SiteWeb/
 │   └── images/
 │
 └── .github/
+    └── .gitkeeps
     └── workflows/
         └── deploy.yml
+        └── lint.yml
 ```
 
 ---
