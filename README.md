@@ -44,9 +44,9 @@
 
 📁 Structure du projet
 
-`
-/
-├── index.html                # Redirection vers /pages/index.html
+```text
+SiteWeb/
+├── index.html               
 ├── pages/
 │   ├── index.html
 │   ├── actions.html
@@ -82,7 +82,7 @@
 └── .github/
     └── workflows/
         └── deploy.yml
-`
+```
 
 ---
 
